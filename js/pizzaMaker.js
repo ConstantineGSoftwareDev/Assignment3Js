@@ -1,7 +1,7 @@
 /*
-    File: pizza_builder.js
-    Author: [Your Name]
-    Date: [Date]
+    File: pizzaMaker.js
+    Author: Constantine Grigoriadis
+    Date: March 21st
 
     Description:
     This JavaScript file contains code for a pizza builder application. Users can input various options such as pizza name, size, toppings, etc., and the application calculates the total price of the pizza based on the selected options.
