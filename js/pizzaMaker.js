@@ -1,3 +1,26 @@
+/*
+    File: pizza_builder.js
+    Author: [Your Name]
+    Date: [Date]
+
+    Description:
+    This JavaScript file contains code for a pizza builder application. Users can input various options such as pizza name, size, toppings, etc., and the application calculates the total price of the pizza based on the selected options.
+
+    List of Functions:
+    - getCheckedFromRadio(radioButtons): Function to get the value of the checked radio button.
+    - getCheckedValuesFromCheckboxes(checkboxes): Function to get the values of the checked checkboxes.
+    - appendErrorMessage(message): Function to append an error message to the errorText element.
+    - appendPizzaDetails(message, identity): Function to append pizza details to the pizzaOutput element.
+    - changeBorderColor(control, color): Function to change the border color of an element.
+    - makeSentenceFromArray(ArrayName, array): Function to create a sentence from an array.
+    - Pizza class: Represents a pizza object with various properties and methods.
+    - buildPizza(e): Function to build the pizza object and display its details.
+
+    List of Variables:
+    - Various variables to store references to HTML elements.
+*/
+
+
 // Selecting elements
 const pizzaNameInput = document.querySelector('#pizzaInput');
 const pizzaSizeRadios = document.querySelectorAll('input[name="pizza_Size"]');
