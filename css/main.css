@@ -1,0 +1,119 @@
+.checkbox-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+#studentInfo{
+text-align: center;
+padding-left: 150px;
+
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+h1{
+    margin-bottom: 5px;
+}
+  
+h2{
+    font-size: 20px;
+}
+h3{
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+  .form-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 500px));
+    gap: 5px;
+    
+    margin: 0 auto;
+  }
+
+  .formItems{
+    margin-bottom: 5px;
+  }
+  .PizzaSize {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .PizzaSize-item {
+    margin-bottom: 10px;
+  }
+
+  .nameDiv{
+    text-align: center;
+  }
+  #pizzaInput{
+    margin-bottom: 5px;
+  }
+
+  .checkbox-item {
+    margin-bottom: 5px;
+  }
+
+  .toppingContainer{
+    width: 600px;
+    margin-bottom: 10px;
+    border-style: solid;
+  }
+
+  h2{
+    text-align: center;
+    margin-top: 0px;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 3px;
+  }
+  .masterHead{
+    width: 600px;
+    text-align: center;
+  }
+
+  #FormInput{
+    width: 40%;
+  }
+  #PizzaDetails{
+    width: 60%;
+  }
+
+  #info{
+    border-style: solid;
+    text-align: center;
+  }
+  #errorText{
+    text-align: center;
+  }
+
+  #pizzaOutput{
+    text-align: center;
+  }
+
+    /* Container styles */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+      }
+    
+      /* Button styles */
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Maker</title>
+    <link rel="stylesheet" href="./css/main.css" >
+    <script src="./js/pizzaMaker.js" defer></script>
+</head>
+<body>
+    <form>
+        <div class="masterHead">
+          <h1> Lets Order a Pizza</h1>
+        </div>
+        <div class="form-columns">
+          <div id="FormInput">
+            <div id="pizzaName" class="toppingContainer">
+              <h2> Name</h2>
+              <div class="nameDiv">
+                <label for="pizzaInput">Name Of Pizza: </label>
+                <input type="text" id="pizzaInput" > 
+              </div>
+    
+              <br>
+            </div>
+            <div id="sizeContainer" class="toppingContainer">
+              <h2>Pizza Size</h2>
+              <div class="PizzaSize">
+                <div class="PizzaSize-item">
+                  <input type="radio" id="Small" name="pizza_Size" value="Small" class="pizzaSize">
+                  <label for="Small">Small</label><br>
+                </div>
+                <div class="PizzaSize-item">
+                  <input type="radio" id="Medium" name="pizza_Size" value="Medium" class="pizzaSize">
+                  <label for="Medium">Medium</label><br>
+                </div>
+                <div class="PizzaSize-item">
+                  <input type="radio" id="Large" name="pizza_Size" value="Large" class="pizzaSize">
+                  <label for="Large">Large</label><br>
+                </div> 
+              </div>
+            </div>
+            <div id="saucesContainer" class="toppingContainer">
+              <h2> Sauces</h2>
+              <div class="checkbox-columns">
+                  <div class="checkbox-item">
+                    <input type="radio" id="Sauce" name="sauces" value="Pizza Sauce">
+                    <label for="Sauce">Pizza Sauce</label><br>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="radio" id="Alfredo" name="sauces" value="Alfredo">
+                    <label for="Alfredo">Alfredo</label><br>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="radio" id="Pesto" name="sauces" value="Pesto">
+                    <label for="Pesto">Pesto</label><br>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="radio" id="BBQ" name="sauces" value="BBQ">
+                    <label for="BBQ">BBQ</label><br>
+                  </div>
+                </div>
+          </div>
+            <div class="toppingContainer">
+                <h2> Vegetables</h2>
+                <div class="checkbox-columns">
+                    <div class="checkbox-item">
+                      <input type="checkbox" id="Onions" name="Onions" class="vegi">
+                      <label for="Onions">Onions</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" id="Mushrooms" name="Mushrooms" class="vegi">
+                      <label for="Mushrooms">Mushrooms</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" id="HotPeppers" name="HotPeppers" class="vegi">
+                      <label for="HotPeppers">Hot Peppers</label>
+                    </div>
+                    <div class="checkbox-item">
+                      <input type="checkbox" id="Pineapple" name="Pineapple" class="vegi">
+                      <label for="Pineapple">Pineapple</label>
+                    </div>
+                  </div>
+            </div>
+            <div class="toppingContainer">
+              <h2> Meats</h2>
+              <div class="checkbox-columns">
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="Pepperoni" name="Pepperoni" class="meat">
+                    <label for="Pepperoni">Pepperoni</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="Bacon" name="Bacon" class="meat">
+                    <label for="Bacon">Bacon</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="Sausage" name="Sausage" class="meat">
+                    <label for="Sausage">Sausage</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="Beef" name="Beef" class="meat">
+                    <label for="Beef"> Beef </label>
+                  </div>
+                </div>
+          </div>
+          <div class="toppingContainer">
+            <h2> Cheeses</h2>
+            <div class="checkbox-columns">
+                <div class="checkbox-item">
+                  <input type="checkbox" id="Mozzarella" name="Mozzarella" class="cheese">
+                  <label for="Mozzarella">Mozzarella</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="Chedder" name="Chedder" class="cheese">
+                  <label for="Chedder">Chedder</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="Daiya" name="Daiya" class="cheese">
+                  <label for="Daiya">Daiya</label>
+                </div>
+                <div class="checkbox-item">
+                  <input type="checkbox" id="Feta" name="Feta" class="cheese">
+                  <label for="Feta">Feta</label>
+                </div>
+              </div>
+        </div>
+        <div id="instructions" class="toppingContainer">
+          <h2>Special Instructions</h2>
+          <div class="PizzaSize">
+            <div class="PizzaSize-item">
+              <h3> Cut</h3>
+              <input type="radio" id="normal" name="cut" value="Normal cut">
+              <label for="normal">Normal</label><br>
+              <input type="radio" id="Square" name="cut" value="Square cut">
+              <label for="Square">Square</label><br>
+              <input type="radio" id="New York" name="cut" value="New York">
+              <label for="New York">New York</label><br>
+            </div>
+            <div class="PizzaSize-item">
+              <h3> Bake </h3>
+              <input type="radio" id="light" name="bake" value="Lightly Done">
+              <label for="light">Light</label><br>
+              <input type="radio" id="Regular" name="bake" value="Regular">
+              <label for="Regular">Regular</label><br>
+              <input type="radio" id="Well Done" name="bake" value="Well Done">
+              <label for="Well Done">Well Done</label><br>
+            </div>
+            <div class="PizzaSize-item">
+              <h3>Crust</h3>
+              <input type="radio" id="NormalCrust" name="crust" value="Normal Crust">
+              <label for="NormalCrust">Normal</label><br>
+              <input type="radio" id="Gluten Free" name="crust" value="Gluten Free">
+              <label for="Gluten Free"> Gluten Free</label><br>
+            </div> 
+           
+          </div>  
+        </div>
+        
+        <div class="container">
+          <button >Order Pizza</button>
+        </div>
+        
+          </div>
+          <p id="studentInfo">
+            
+          </p>
+          <div class="detail">
+            <h2>Our Pizza</h2>
+            <P id="errorText">
+
+            </P>
+            <div id="pizzaOutput">
+
+            </div>
+            <div id="info">
+              <h4>Pricing Details</h4>
+              <span> Small Pizza $12 Base Price <br></span>
+              <span> Medium Pizza + 3$<br> </span>
+              <span> Large Pizza + 6$<br> </span>
+              <br>
+              <span>
+                First topping free <br>
+                After that $1.5 each
+              </span>
+              <br><br>
+              <span>
+                First Cheese free <br>
+                After that $2 each <br>
+              </span>
+              <span>
+                .
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+    </form>
+</body>
+</html>
